@@ -295,12 +295,15 @@
       <p style="text-align:center;color:var(--muted);max-width:760px;margin:0 auto 22px">Your perfect wedding is just a conversation away. Let’s discuss your dreams, your traditions, and how we can make your special day unforgettable.</p>
 
       <div class="join__wrap">
-        <form class="form" onsubmit="event.preventDefault();alert('Thank you! We will reach out soon.');">
+        <form class="form" action="https://formsubmit.co/hello@viroka.co" method="POST">
+<input type="hidden" name="_subject" value="New enquiry from Viroka Website">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://www.viroka.co/">
           <label for="name">Bride / Groom's name</label>
           <input id="name" name="name" placeholder="e.g. Kriti Sharma" required>
 
           <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="hello@example.com" required>
+          <input id="email" type="email" name="email" placeholder="hello@viroka.co" required>
 
           <label for="phone">Phone number</label>
           <input id="phone" name="phone" placeholder="+91 98XXXXXXXX" required>
