@@ -31,7 +31,11 @@ height:100%;
     body{margin:0;background:var(--bg);color:#222;font-size:16px;line-height:1.55}
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
-    .container{max-width:1400px(--maxw);margin:0 auto;padding:40px 20px}
+   .container{
+    max-width:1400px;
+    margin:0 auto;
+    padding:40px 20px;
+}
 
     /* --- Hero --- */
     .hero{position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;color:#fff}
@@ -193,20 +197,55 @@ height:100%;
 <body>
 
   <!-- HERO -->
-  <header class="hero">
+ <header class="hero" id="home">
     <div class="hero__bg" aria-hidden="true"></div>
-    <div class="container hero__inner">
-    <div style="text-align:center; margin-bottom:30 px;">
-            <img src="Viroka%20Logo.png" alt="Viroka" style="height:60 px;">
-        </div>
-      <span class="kicker">Because your journey deserves to be celebrated</span>
-      <h1>Your Love Story.<br/>Perfectly Crafted.</h1>
-      <p class="lead">Creating magical moments that celebrate the beautiful traditions of Indian weddings. Every detail designed to honour your love and heritage.</p>
-      <div class="hero__cta">
-        <button class="btn btn--primary">Book Your Consultation</button>
-        <button class="btn btn--ghost">View Our Work</button>
-      </div>
+   <nav class="navbar">
+
+    <a href="#home" class="logo">
+        <img src="Viroka%20Logo.png" alt="Viroka">
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="tel:+919988173194" class="phone-btn">
+        📞 99881 73194
+    </a>
+
+</nav>
+
+<div class="container hero__inner">
+
+    <span class="kicker">
+        Because your journey deserves to be celebrated
+    </span>
+
+    <h1>
+        Your Love Story.<br>
+        Perfectly Crafted.
+    </h1>
+
+    <p class="lead">
+        Creating magical moments that celebrate the beautiful traditions of Indian weddings. Every detail designed to honour your love and heritage.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#contact" class="btn btn--primary">
+    Book Your Consultation
+</a>
+
+<a href="#portfolio" class="btn btn--ghost">
+    View Our Work
+</a>
     </div>
+
+</div>
   </header>
 
   <!-- STORY -->
@@ -349,7 +388,7 @@ height:100%;
   </section>
 
   <!-- TESTIMONIALS -->
- <section class="testimonials" id="testimonials">
+<section class="join" id="contact">
     <div class="container">
       <h3 style="text-align:center;margin-bottom:12px">Stories of <span style="color:var(--accent-1)">Joy</span> &amp; <span style="color:var(--accent-2)">Gratitude</span></h3>
       <p style="text-align:center;color:var(--muted);margin:0 auto 22px;max-width:700px">The greatest reward is seeing families come together and witnessing the pure joy in our couple's eyes on their special day.</p>
