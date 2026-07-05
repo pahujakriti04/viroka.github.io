@@ -200,26 +200,22 @@ height:100%;
   }
 
   .navbar{
-    flex-direction:column;
-    justify-content:center;
-    gap:18px;
-    height:auto;
-    padding:20px;
-  }
+    height:72px;
+    padding:0 18px;
+}
 
-  .logo img{
-    height:52px;
-  }
+.logo img{
+    height:42px;
+}
 
-  .nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
-  }
+.nav-links{
+    display:none;
+}
 
-  .nav-links a{
-    font-size:12px;
-  }
+.phone-btn{
+    padding:10px 16px;
+    font-size:13px;
+}
 
   .container{
     padding:0 20px;
@@ -267,7 +263,9 @@ height:100%;
     <a href="tel:+919988173194" class="phone-btn">
         📞 99881 73194
     </a>
-
+<button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
 </nav>
 
 <div class="container hero__inner">
